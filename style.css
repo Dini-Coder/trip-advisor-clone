@@ -17,8 +17,6 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-
-
 }
 
 .navbar {
@@ -255,16 +253,13 @@ body {
     justify-content: space-around;
     margin-top: 30px;
     border-bottom: solid rgb(164, 164, 164) 1px;
-
     width: 90%;
 }
 
 
 .search-bar-inp i {
-       
-    left: 12px;
 
-    
+    left: 12px;
 
 }
 
@@ -314,8 +309,6 @@ body {
     text-align: left;
     color: rgb(0, 0, 0);
 }
-
-
 
 .banner-content button {
     width: max-content;
@@ -408,9 +401,8 @@ body {
     margin-top: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-right: 9%;
     margin-left: 9%;
+    margin-right: 9%;
     line-height: 40px;
 }
 
@@ -918,30 +910,9 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+
     .body {
-        
-        display: flex;
-        flex-direction: column;
-        margin-right: 0%;
-    }
-
-    .navbar {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .navbar__s1 img {
-        margin-top: 5px;
-        width: 150px;
-    }
-
-    .navbar__menu {
-        display: flex;
-        position: absolute;
-        flex-direction: row;
-        top: 10px;
-        left: 150px;
-
+        margin: 12%;
     }
 
     .navbar__s2 {
@@ -952,49 +923,246 @@ body {
         display: none;
     }
 
+    .navbar__s1 {
+        position: relative;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        width: 65%;
+    }
+
+    .navbar__s1 img {
+        width: 140px;
+    }
+
+    .menubar_section {
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+
+
+    .navbar__menu {
+        position: absolute;
+        display: inline;
+        width: fit-content;
+        left: 25px;
+        font-size: 20px;
+    }
+
+    .search-bar {
+        display: none;
+        flex-direction: column ;
+    }
+
+    .search-bar-mob {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 80px;
+        margin-right: 80px;
+
+    }
+
+    .search_button-mob {
+        padding:0 140px;
+    }
+    .trip-options {
+        display: flex;
+        flex-direction: row;
+    }
+
     .menubar h1 {
         display: none;
     }
 
+    .menubar {
+        margin-top: 0%;
+    }
+
+    .banner-section {
+        margin-top: 5%;
+    }
+
+    .banner-section img {
+        width: 75%;
+        border-radius: 10px;
+    }
+
+    .banner-content h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
     .trip-options {
-        width: 180%;
-        font-size: medium;
+        width: 200%;
+        flex-direction: row;
+        margin-top: 0%;
+        align-items: center;
     }
 
     .trip-options p {
-        display: flex;
+        display: inline-block;
         flex-direction: row;
-
         align-items: center;
         justify-content: center;
         gap: 10px;
     }
 
-    .menubar {
-        overflow: hidden;
-        overflow-x: scroll;
-        margin-top: 0%;
+    .trips-section {
+        margin-top: 20px;
+                
     }
 
-    .search-bar {
+    .trips-section h2 {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .See-more__btn {
+        margin-top: 12px;
+        margin-right: 20px;
+    }
+
+    .trips-section p {
+        font-size: 12px;
+        margin-left: 20px;
+        line-height: normal;
+    }
+
+    .trip-section__carousel {
+        width: 90%;
+        margin-left: 5%;
+        flex-grow: 1;
+    }
+
+
+    .card-corousel h1 {
+        flex-basis: 20%;
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    /* Chennai */
+
+    .chennaitour-section {
+        margin-top: 20px;
+    }
+    .chennaitour-section h2 {
+        margin-left: 20px;
+        font-size: 16px;  
+    }
+    .chennaitour-section p {
+        line-height: 10px;
+        margin-left: 20px;
+
+        font-size: 12px;
+
+    }
+
+    .card-content-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        text-align: left;
+        align-content: center;
+    }
+
+    .card-content-2 p {
+        margin-left: 0%;
+        line-height: 15px;
+    }
+    .views p {
+    
+
+    }
+
+    .price p {
+        vertical-align: middle;
+
+    }
+
+    .chennaitour-trip {
+        width: 90%;
+        margin-left: 5%;
+
+    }
+    .rating {
+        display: block;
+    }
+
+
+    /* vibrant asian */
+
+    .asian-cities {
+        margin-top: 200px;
+    }
+
+    .asian-cities h2 {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .See-more__btn {
+        margin-top: 12px;
+        margin-right: 20px;
+    }
+
+    .asian-cities p {
+        font-size: 12px;
+        margin-left: 20px;
+        line-height: normal;
+    }
+
+    .trip-section__carousel {
+        width: 90%;
+        margin-left: 5%;
+        flex-grow: 1;
+    }
+
+    /* Footer Banner */
+
+    .footer__banner {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__banner__img img {
+        margin-top: 20px;
+        height: 300px;
+    }
+
+    .footer__banner__text h1 {
+        font-size: 30px;
+    }
+
+    .footer__banner__text p {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+
+    .footer_badge img {
+        width: 70px;
+    }
+
+    .footer-section {
         display: none;
     }
 
-    .search-bar-mob {
-        display: flex;
-    }
+ 
 
-    .banner-section img {
-        width: 300px;
-        flex-grow: 1;
+    
 
 
-    }
 
-    .banner-content {
-        padding-left: 50px;
-    }
 
+
+    
 
 
 }
